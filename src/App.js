@@ -1,18 +1,23 @@
 import React from 'react'
 // import './App.css';
+import { Route , Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
 import Page1 from './components/Page1';
+import Log from './components/Log';
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Page1 />
-      <Page2/>
-      <Page3/>
-    </>
+    <Navbar/>
+    <Routes>
+      <Route path = "/" element={<Page1 />}/>
+      {/* <Route path = "/" element={<Page2 />}/>
+      <Route path = "/" element={<Page3 />}/> */}
+      <Route path = "/log" element={<Log/>}/>
+    </Routes>
+      </>
   );
 }
 

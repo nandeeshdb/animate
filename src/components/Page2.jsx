@@ -8,9 +8,9 @@ const Page2 = () => {
             <div className='flex flex-col justify-center'>
                 <p className='md:text-4xl md:m-2 sm:text-3xl text-2xl font-bold py-2'>LEARNING DASHBOARD</p>
                 <h1 className='md:m-2'>Get Ready to Explore</h1>
-                {/* <p className='md:m-2'>
+               <p className='md:m-2'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rerum repudiandae omnis at ad id incidunt ex, commodi facilis, necessitatibus corporis a ea enim libero doloribus dicta consectetur natus aut.
-                </p> */}
+                </p> 
                 <button className="bg-blue-950 text-white rounded-md w-40 font-medium my-6 mx-auto  md:mx-5 p-5 hover:underline hover:font-bold">LET'S START</button>
             </div>
 
