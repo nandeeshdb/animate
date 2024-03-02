@@ -1,23 +1,22 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-import React, { useState } from 'react';
-import {Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import UserContext from '../context/UserContext';
 
 
   
     const Log = () => {
 
-const [data , setData] = useState({})
+const [username , setUsername] = useState('');
+const [password , setPassword] = useState('');
+
+const {user} = useContext(UserContext)
       
   
 const handleSubmit = (e) => {     
         e.preventDefault()
-        console.log(data)
+        // setUser({username})
+        console.log(user)
        }
       
-        const onChangeHandler =(e) => {
-          setData({...data,[e.target.id]:e.target.value})
-        }
             
     return (
         <>
@@ -28,13 +27,14 @@ const handleSubmit = (e) => {
             <h2 className='text-4xl font-bold text-center py-6'>ANIMATE.</h2>
             <div className='flex flex-col py-2'>
               <label>Username</label>
-              <input className='border p-2' type = "text" name='username' id='username' autoComplete='off' onChange ={onChangeHandler} 
+              <input className='border p-2' type = "text" name='username' id='username' autoComplete='off' 
+              value={username} onChange ={(e) => setUsername(e.target.value)}
               />
             </div>
     
             <div className='flex flex-col py-2'>
               <label>Password</label>
-              <input className='border p-2' type = "text" name='password' id='password' autoComplete='off' onChange ={onChangeHandler} />
+              <input className='border p-2' type = "text" name='password' id='password' autoComplete='off'value={password} onChange ={(e) => setPassword(e.target.value)} />
             </div>
     
             

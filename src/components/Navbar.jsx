@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react'
 import { BsViewStacked } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -26,7 +27,7 @@ const Navbar = () => {
       </div>
       <ul className={nav ? 'fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-blue-100 ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
         <h1 className='w-full text-3xl font-bold text-blue-950 m-4'>ANIMATE.</h1>
-          <li className='p-4 border-b -semibold border-blue-200 '>HOME</li>
+        <li className='p-4 border-b font-semibold border-blue-200'>HOM</li>
           <li className='p-4 border-b font-fontsemibold border-blue-200'>ABOUT</li>
           <li className='p-4 border-b font-semibold border-blue-200'>RESOURCES</li>
           <li className='p-4 font-semibold'>CONTACT</li>

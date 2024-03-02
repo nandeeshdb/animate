@@ -20,8 +20,7 @@ function App() {
       <Route path = "/" element={<Page2 />}/>
       <Route path = "/" element={<Page3 />}/> 
       <Route path = "/log" element={<Log/>}/>
-
-  </Routes>
+     </Routes>
 
   {/* <Tools/> */}
 
