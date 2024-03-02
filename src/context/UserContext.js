@@ -1,7 +1,3 @@
-import React from "react";
-import Log from "../components/Log";
+import { createContext } from 'react';
 
-const UserContext = React.createContext('')
-
-export default UserContext; 
-
+export const MyContext = createContext({ user: "", setUser: () => {} });

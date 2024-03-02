@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import UserContext from "./UserContext";
-import Log from "../components/Log";
+import MyContext from "./UserContext.js";
+import Log from "../components/Log.jsx";
 
 
 const UserContextProvider =({children}) => {
@@ -9,12 +9,11 @@ const UserContextProvider =({children}) => {
 
 
    return(
-    <>
-    <UserContext.Provider value = {{user,setUser}}>
-    <Log />
-    </UserContext.Provider>
     
-    </>
+    <MyContext.Provider value = {{user,setUser}}>
+   <Log />
+    </MyContext.Provider>
+
    )
 }
 
