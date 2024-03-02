@@ -3,6 +3,8 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Page2 from './Page2';
 import Page3 from './Page3';
+import Tools from './Tools';
+import Reviews from './Reviews';
 
 const Page1 = () => {
 
@@ -28,6 +30,8 @@ const Page1 = () => {
 
     </div>
     <Page2 />
+    <Tools/>
+    <Reviews/>
     <Page3 />
 
     </div>
